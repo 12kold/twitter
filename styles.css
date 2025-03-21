@@ -1,0 +1,178 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6ecf0;
+    color: #14171a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #15202b;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1da1f2;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Content Section */
+.content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: #1da1f2;
+}
+
+/* Post Box */
+.post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #1da1f2;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+button {
+    background-color: #1da1f2;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1991db;
+}
+
+/* Trending Section */
+.trending ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending li {
+    background-color: #f5f8fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #1da1f2;
+    border-radius: 8px;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.profile h1 {
+    color: #1da1f2;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+/* Notifications Section */
+.notifications-list li {
+    background-color: #f5f8fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #1da1f2;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #15202b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .content, .profile {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
